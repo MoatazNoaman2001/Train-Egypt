@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Train Egypt</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="sign_in_label">sign in</string>
+    <string name="sign_out_label">sign out</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="intro_background" translatable="false">intro_background</string>
+    <string name="intro_logo_image" translatable="false">intro_logo_image</string>
+    <string name="title_activity_start" translatable="false">Train Egypt</string>
+    <string name="email">Email</string>
+    <string name="password">PassWord</string>
+    <string name="name">Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_out">Sign out</string>
+    <string name="my_packet">my packet</string>
+    <string name="main_page">Main Page</string>
+    <string name="search_Train">Search Train</string>
+    <string name="search">Search</string>
+    <string name="search_for_hotel">Hotel Search</string>
+    <string name="type_hotel_name_or_city">type hotel name or city</string>
+    <string name="payment">Payment</string>
+
+    <string name="webClient">244444047841-ur37dm8q7h5k4qhjlbv627hco8bejooo.apps.googleusercontent.com</string>
+    <string name="facebook_app_id" tools:ignore="MissingTranslation">432140784486481</string>
+    <string name="fb_login_protocol_scheme" tools:ignore="MissingTranslation">fb432140784486481</string>
+
+    <string-array name="numOfAdult">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="numOfChildren">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

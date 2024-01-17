@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Train Eygpt</string>
+    <string name="action_settings">الاعدادات</string>
+    <string name="sign_in_label">تسجيل الدخول</string>
+    <string name="sign_out_label">"انشاء حساب "</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
+    <string name="email">البريد الاكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="name">اسم المستخدد</string>
+    <string name="hello_blank_fragment">هالو</string>
+
+    <string name="sign_out">اشاء حساب</string>
+    <string name="my_packet">العربة</string>
+    <string name="main_page">الصفحة الرئيسية</string>
+    <string name="search_Train">بحث عن قطار</string>
+    <string name="search">بحث</string>
+
+    <string name="search_for_hotel">بحث عن فندق</string>
+    <string name="type_hotel_name_or_city">type hotel name or city</string>
+    <string name="payment">Payment</string>
+    <string name="webClient">244444047841-ur37dm8q7h5k4qhjlbv627hco8bejooo.apps.googleusercontent.com</string>
+
+</resources>

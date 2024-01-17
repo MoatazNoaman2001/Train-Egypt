@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple600"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PaidTrainTicketDetailsFragment">
+
+
+    <TextView
+        android:id="@+id/DateOfTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="wed 06/12"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/PassengerName"
+        app:layout_constraintTop_toBottomOf="@+id/TerminationStationSmall"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/DateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="Date"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/DateOfTicket"
+        app:layout_constraintEnd_toEndOf="@+id/DateOfTicket"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DateOfTicket"
+        app:layout_constraintTop_toBottomOf="@+id/TerminationStationSmall"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:src="@drawable/city"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/ProgressParIndicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_60sdp"
+        android:max="10"
+        android:progress="3"
+
+        app:indicatorColor="@color/primaryDarkColor"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.093"
+        app:trackCornerRadius="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/StartDisLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/allerta"
+        android:text="CAR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/primaryLightColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/TreDisLarge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressParIndicator" />
+
+    <TextView
+        android:id="@+id/TreDisLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/allerta"
+        android:text="ASU"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/primaryLightColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toEndOf="@+id/StartDisLarge"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressParIndicator" />
+
+    <TextView
+        android:id="@+id/TerminationStationSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Assuit"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toEndOf="@+id/startDestinationSmall"
+        app:layout_constraintTop_toBottomOf="@+id/TreDisLarge"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/startDestinationSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:text="Cairo"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/TerminationStationSmall"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartDisLarge"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/PassengerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:fontFamily="@font/allerta"
+        android:text="moataz kayad"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartDisLarge"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/PassengerNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="@font/adamina"
+        android:text="Passenger"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/PassengerName"
+        app:layout_constraintEnd_toEndOf="@+id/PassengerName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PassengerName"
+        app:layout_constraintTop_toBottomOf="@+id/StartDisLarge"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TicketID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/adamina"
+        android:text="Ticket ID"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/PassengerName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="Usd83F-dAA212"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PassengerName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PassengerName"
+        app:layout_constraintTop_toBottomOf="@+id/PassengerName"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="1006"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="train no."
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TackOffTimeLabal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="Tack Off Time"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_7ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/TackOffTime"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <TextView
+        android:id="@+id/TackOffTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/adamina"
+        android:text="05:12"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/TackOffTimeLabal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ArrivalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="10:42"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TackOffTime"
+        app:layout_constraintEnd_toStartOf="@+id/Duration"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toEndOf="@+id/TackOffTime"
+        app:layout_constraintTop_toBottomOf="@+id/ArrivalTimeLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ArrivalTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="Arrival Time"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ArrivalTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ArrivalTime"
+        app:layout_constraintTop_toTopOf="@+id/TackOffTimeLabal"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="4 houres and 13 min"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/DateOfTicket"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DateOfTicket"
+        app:layout_constraintTop_toBottomOf="@+id/DateOfTicket"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/DurationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="Duration"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/Duration"
+        app:layout_constraintEnd_toEndOf="@+id/Duration"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Duration"
+        app:layout_constraintTop_toBottomOf="@+id/DateOfTicket"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="class"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/TrainClass"
+        app:layout_constraintEnd_toEndOf="@+id/TrainClass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TrainClass"
+        app:layout_constraintTop_toBottomOf="@+id/DateOfTicket"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TrainClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:text="Spanish A"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/DurationLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/qr_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple600"
+            android:clickable="true"
+            android:src="@drawable/ic_qr_code_scanner"
+            app:backgroundTint="@color/primaryLightColor"
+            app:borderWidth="@dimen/_2sdp"
+            app:elevation="@dimen/_10sdp"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bottomAppBar"
+            app:layout_behavior="com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/bottomAppBar"
+            app:pressedTranslationZ="@dimen/_10sdp"
+            app:showMotionSpec="@anim/left_enter"
+            app:tint="@color/primaryLightColor" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="center"
+            app:fabAnimationMode="scale"
+            app:fabCradleRoundedCornerRadius="@dimen/_15sdp"
+            app:fabCradleVerticalOffset="@dimen/_6sdp" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

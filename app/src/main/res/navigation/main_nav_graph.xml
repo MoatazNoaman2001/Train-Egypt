@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.traineygpt.UI.MainFragments.MainFragment"
+        android:label="Train Egypt"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_ticketDetailsFragment"
+            app:destination="@id/ticketDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_hotelDetailFrgament"
+            app:destination="@id/hotelDetailFrgament" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_Train"
+        android:name="com.example.traineygpt.UI.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_search_Train_to_trainListFragment"
+            app:destination="@id/trainListFragment"
+            app:enterAnim="@anim/right_enter" />
+        <action
+            android:id="@+id/action_search_Train_to_ticketDetailsFragment"
+            app:destination="@id/ticketDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainListFragment"
+        android:name="com.example.traineygpt.TrainListFragment"
+        android:label="Station List"
+        tools:layout="@layout/fragment_train_list_list" >
+        <action
+            android:id="@+id/action_trainListFragment_to_search_Train"
+            app:destination="@id/search_Train" />
+    </fragment>
+    <fragment
+        android:id="@+id/HotelSearch"
+        android:name="com.example.traineygpt.UI.HotelSearch"
+        android:label="Hotel search"
+        tools:layout="@layout/fragment_hotel_search" >
+        <action
+            android:id="@+id/action_HotelSearch_to_hotelDetailFrgament"
+            app:destination="@id/hotelDetailFrgament" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketDetailsFragment"
+        android:name="com.example.traineygpt.TicketDetailsFragment"
+        android:label="more details"
+        tools:layout="@layout/fragment_ticket_details" >
+        <action
+            android:id="@+id/action_ticketDetailsFragment_to_payFragment"
+            app:destination="@id/payFragment"
+            app:enterAnim="@anim/right_enter" />
+        <action
+            android:id="@+id/action_ticketDetailsFragment_to_paidTrainTicketDetailsFragment"
+            app:destination="@id/paidTrainTicketDetailsFragment"
+            app:enterAnim="@anim/scale_enter"
+            app:exitAnim="@anim/left_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelDetailFrgament"
+        android:name="com.example.traineygpt.UI.HotelDetailFrgament"
+        android:label="Hotels"
+        tools:layout="@layout/fragment_hotel_detail_fragment" >
+        <action
+            android:id="@+id/action_hotelDetailFrgament_to_chooseAvailbaleTimeFragment"
+            app:destination="@id/chooseAvailbaleTimeFragment"
+            app:enterAnim="@anim/right_enter"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/left_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.example.traineygpt.UI.PayFragment"
+        android:label="Pay "
+        tools:layout="@layout/fragment_pay" />
+    <fragment
+        android:id="@+id/chooseAvailbaleTimeFragment"
+        android:name="com.example.traineygpt.ChooseAvailableTimeFragment"
+        android:label="hotel reservation"
+        tools:layout="@layout/fragment_choose_availbale_time" >
+        <action
+            android:id="@+id/action_chooseAvailbaleTimeFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+        <action
+            android:id="@+id/action_chooseAvailbaleTimeFragment_to_paidHotelReservationDetailFragment"
+            app:destination="@id/paidHotelReservationDetailFragment"
+            app:enterAnim="@anim/scale_enter"
+            app:exitAnim="@anim/left_exit" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.traineygpt.UI.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_paidTrainTicketDetailsFragment"
+            app:destination="@id/paidTrainTicketDetailsFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_reservedHotelDetail"
+            app:destination="@id/reservedHotelDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/paidTrainTicketDetailsFragment"
+        android:name="com.example.traineygpt.PaidTrainTicketDetailsFragment"
+        android:label="ticket details"
+        tools:layout="@layout/fragment_paid_train_ticket_details" />
+    <fragment
+        android:id="@+id/paidHotelReservationDetailFragment"
+        android:name="com.example.traineygpt.PaidHotelReservationDetailFragment"
+        android:label="reservation details"
+        tools:layout="@layout/fragment_paid_hotel_reservation_detail" >
+        <action
+            android:id="@+id/action_paidHotelReservationDetailFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reservedHotelDetail"
+        android:name="com.example.traineygpt.ReservedHotelDetail"
+        android:label="reservation details"
+        tools:layout="@layout/fragment_reserved_hotel_detail" />
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.traineygpt.CommentFragment"
+        android:label="trips comment"
+        tools:layout="@layout/fragment_comment" />
+</navigation>

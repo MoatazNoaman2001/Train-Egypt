@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/top_background_rounded"
+    android:backgroundTint="@color/primaryColor"
+    android:orientation="vertical"
+    android:id="@+id/bottomsheetlayout"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:fontFamily="@font/allerta"
+        android:textAlignment="center"
+        android:text="Show Qr code to the worker on the train"
+        android:textColor="@color/white" />
+    <ImageView
+        android:id="@+id/QrCodeForTicket"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/start_img"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/startBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TPE"
+                android:textStyle="bold"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_24ssp"/>
+            <TextView
+                android:id="@+id/startSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_14ssp"
+                android:text="Taipie"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp"
+            app:srcCompat="@drawable/right_arrow"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:gravity="start">
+            <TextView
+                android:id="@+id/TerBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KUL"
+                android:textStyle="bold"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_24ssp"/>
+            <TextView
+                android:id="@+id/TerSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_10ssp"
+                android:text="Kuala Lumpur Assuit"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_14ssp"
+                android:text="Passenger"/>
+            <TextView
+                android:id="@+id/PassengerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moataz Kayad"
+                android:textStyle="bold"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_18ssp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_14ssp"
+                android:text="Train ID"/>
+            <TextView
+                android:id="@+id/TrainId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moataz Kayad"
+                android:textStyle="bold"
+                android:textColor="@color/purple600"
+                android:textSize="@dimen/_17ssp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

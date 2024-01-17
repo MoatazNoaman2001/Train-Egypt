@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/paymentFragment"
+        android:title="@string/payment"
+        android:icon="@drawable/ic_account_balance_wallet"/>
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/main_page" />
+    <item
+        android:id="@+id/search_Train"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_Train" />
+    <item
+        android:id="@+id/HotelSearch"
+        android:icon="@drawable/outline_hotel_black_20"
+        android:title="@string/search_for_hotel" />
+
+
+</menu>
